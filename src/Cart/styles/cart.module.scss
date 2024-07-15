@@ -1,0 +1,75 @@
+ 
+ //variables에 모바일 최대값 지정해두기
+ $ROOT-WIDTH: 768px;
+
+ .cart {
+   max-width: $ROOT-WIDTH !important;
+   width: 100%;
+   background-color: #ffffff;
+   &_status {
+
+   }
+   &_list {
+      max-width: $ROOT-WIDTH;
+      width: 100%;
+      &_add {
+         color: #E40030;
+         font-weight: 700;
+         &::after {
+            content: '+';
+         }
+       }
+    }
+    &_recommend {
+      background-color: #FFF8EA;
+      border-top: 1px solid #FFDB83;
+      border-bottom: 1px solid #FFDB83;
+      height: 15rem;
+    }
+ }
+ .card {
+   width: 100%;
+   background-color: #fff;
+   display: flex;
+   gap: 1rem;
+   padding: 1rem;
+   margin: 0 auto;
+   box-sizing: border-box;
+
+   &_img {
+      width: 5rem;
+      height: 5rem;
+      background-color: rgb(255, 255, 255)292;
+      border-radius: 0.5rem;
+      margin: auto 0;
+      border: 1px solid #9E9B98;
+
+   }
+   &_product {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      text-align: left;
+      width: 50%;
+      &_name {
+         font-weight: 700;
+      }
+      &_option {
+         color: #9E9B98;
+      }
+   }
+   &_quantity {
+      position: relative;
+      right: 0;
+      margin: auto;
+   }
+ }
+
+ .recomendcard {
+   background-color: #fff;
+   
+ }
+.cart_footer {
+   position: fixed;
+   bottom: 0;
+}
